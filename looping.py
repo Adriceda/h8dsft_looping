@@ -4,12 +4,17 @@ b = []
 index = 0
 
 for i in range(0, len(numbers)-1):
-    if (numbers[i]%2 == 0) & (numbers[i]<=918):
+    # if (numbers[i]%2 == 0) & (numbers[i]<=918):
+    if (numbers[i]%2 == 0):
         b.insert(index, numbers[i])
         print numbers[i]
         index += 1
+        if numbers[i] == 918:
+            break
 
-# print "index = ", index 
+
+print "index = ", index 
 # c = len(b)
 # print(c)
 
+print "DONE"
